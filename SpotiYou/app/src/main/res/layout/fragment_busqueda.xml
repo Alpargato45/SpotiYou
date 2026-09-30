@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.BusquedaFragment"
+    android:background="@color/negroFondoApp">
+
+    <EditText
+        android:id="@+id/barraBusqueda"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/btnAceptarBusqueda"
+        android:background="@drawable/tipo_buscador"
+        android:fontFamily="@font/itim"
+        android:textColor="@color/black"
+        android:textColorHint="@color/negroFondoApp"
+        android:hint="Busca la canción que desees"/>
+
+    <Button
+        android:id="@+id/btnAceptarBusqueda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="Buscar"
+        android:textSize="22dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:fontFamily="@font/itim"
+
+        android:layout_marginTop="40dp"/>
+
+    <ListView
+        android:id="@+id/listaCancionesBusqueda"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnAceptarBusqueda"/>
+
+</RelativeLayout>

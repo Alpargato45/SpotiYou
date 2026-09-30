@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negroFondoApp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layoutToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="@color/azulFondoLetras">
+
+                <ImageView
+                    android:id="@+id/volverAtras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_arrow_back_24"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgArtista"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/layoutToolbar"/>
+
+            <TextView
+                android:id="@+id/txtNombreArtista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:textColor="@color/white"
+                android:layout_below="@id/imgArtista"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/itim"/>
+
+            <ToggleButton
+                android:id="@+id/toggleSeguirArtista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Seguir"
+                android:textOn="Dejar de seguir"
+                android:background="@drawable/rounded_toggle_button"
+                android:textColor="@color/white"
+                android:layout_below="@id/txtNombreArtista"/>
+
+            <Button
+                android:id="@+id/btnEscucharEnSpotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNombreArtista"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/toggleSeguirArtista"
+                android:backgroundTint="#04E762"
+                android:drawableLeft="@drawable/spotify"
+                android:text="Spotify"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/txtSeguidoresArtista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seguidores: "
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/itim"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/toggleSeguirArtista"/>
+
+            <TextView
+                android:id="@+id/txtPopularidadArtista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Popularidad: "
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/itim"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/txtSeguidoresArtista"/>
+
+            <TextView
+                android:id="@+id/txtTopCanciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top Canciones de "
+                android:textColor="@color/azulFondoLetras"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/txtPopularidadArtista"/>
+
+            <ListView
+                android:id="@+id/listaTopCanciones"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_below="@id/txtTopCanciones"/>
+
+            <LinearLayout
+                android:id="@+id/layoutAlbums"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/listaTopCanciones">
+
+                <TextView
+                    android:id="@+id/txtAlbums"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Álbums"
+                    android:textColor="@color/azulFondoLetras"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="invisible"/>
+
+                <!--TODO: Hacer que aparezca y desaparezca si tiene albums o no-->
+
+                <ListView
+                    android:id="@+id/listaAlbums"
+                    android:layout_width="match_parent"
+                    android:layout_height="1000dp"
+                    android:layout_below="@id/txtAlbums"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

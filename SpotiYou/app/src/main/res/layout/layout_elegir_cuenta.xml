@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negroFondoApp">
+
+    <!--TODO:BBDD: Activado 0/1 (0 placeholder 1 cuenta)-->
+    <!--TODO: Guardar nombre y foto usuario-->
+    <!--TODO:Botón para borrar cuenta-->
+    <!--TODO:Cambiar el navegation para que coincida con la cuenta-->
+    <!--TODO: Cambiar la forma de acceder al token-->
+    <!--TODO:-->
+    <!--TODO:-->
+
+    <TextView
+        android:id="@+id/lblSpotiYou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SpotiYou"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/itim"/>
+
+    <TextView
+        android:id="@+id/lblSeleccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona tu cuenta: "
+        android:textColor="@color/azulFondoLetras"
+        android:fontFamily="@font/itim"
+        android:textSize="28dp"
+        android:layout_below="@id/lblSpotiYou"/>
+
+    <ListView
+        android:id="@+id/listaUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lblSeleccion"/>
+
+
+
+</RelativeLayout>

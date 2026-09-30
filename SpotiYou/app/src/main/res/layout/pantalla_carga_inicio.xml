@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#6CA6C1">
+
+    <ImageView
+        android:id="@+id/logo_app"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:src="@mipmap/logotipo_app" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="SpotiYou"
+        android:textColor="@color/white"
+        android:layout_below="@+id/logo_app"
+        android:textAlignment="center"
+        android:textSize="64dp" />
+
+    <ProgressBar
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="@android:color/white"
+        style="?android:attr/progressBarStyle"
+        android:layout_below="@id/texto"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_jdm"/>
+
+</RelativeLayout>

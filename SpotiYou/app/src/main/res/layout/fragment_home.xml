@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negroFondoApp">
+
+    <ImageView
+        android:id="@+id/imgUsuarioSpotify"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/default_pfp"/>
+
+    <TextView
+        android:id="@+id/textoNombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgUsuarioSpotify"
+        android:layout_marginLeft="15dp"
+        android:text="Bienvenido "
+        android:textSize="24dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/itim"/>
+
+    <TextView
+        android:id="@+id/textoIdUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/imgUsuarioSpotify"
+        android:layout_below="@id/textoNombreUsuario"
+        android:textColor="@color/white"
+        android:fontFamily="@font/itim"
+        android:textSize="15dp"/>
+
+    <ImageView
+        android:id="@+id/imagenCorona"
+        android:visibility="invisible"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/textoIdUsuario"
+        android:layout_toRightOf="@id/imgUsuarioSpotify"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/icono_corona_premium"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutEscuchandoAhora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgUsuarioSpotify"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textoEscuchandoAhoraSTATIC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Escuchando Ahora"
+            android:textSize="24dp"
+            android:fontFamily="@font/itim"
+            android:textColor="@color/azulFondoLetras"/>
+        
+        <ImageView
+            android:id="@+id/imgEscuchandoAhora"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/textoEscuchandoAhoraSTATIC"/>
+
+        <TextView
+            android:id="@+id/textoEscuchandoAhoraNombreCancion"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/imgEscuchandoAhora"
+            android:layout_below="@id/textoEscuchandoAhoraSTATIC"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:fontFamily="@font/itim"/>
+
+        <TextView
+            android:id="@+id/textoEscuchandoAhoraNombreCantante"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:textSize="16dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/itim"
+            android:layout_toRightOf="@id/imgEscuchandoAhora"
+            android:layout_below="@id/textoEscuchandoAhoraNombreCancion"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/imgIconoEscuchandoAhora"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/escuchando_ahora"
+            android:layout_toRightOf="@id/imgEscuchandoAhora"
+            android:layout_below="@id/textoEscuchandoAhoraNombreCantante"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textoEscuchandoDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escuchando en: "
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:fontFamily="@font/itim"
+            android:layout_toRightOf="@id/imgIconoEscuchandoAhora"
+            android:layout_below="@id/textoEscuchandoAhoraNombreCantante"
+            android:layout_marginTop="13dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textoEscuchadosRecientemente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escuchados Recientemente"
+        android:textSize="24dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/azulFondoLetras"
+        android:fontFamily="@font/itim"
+        android:layout_below="@id/layoutEscuchandoAhora"
+        android:layout_marginTop="10dp"/>
+
+        <ListView
+            android:id="@+id/ListViewEscuchasRecientes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textoEscuchadosRecientemente" />
+
+</RelativeLayout>

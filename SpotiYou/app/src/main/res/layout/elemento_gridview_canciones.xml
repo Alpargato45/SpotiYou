@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imagenGridCancion"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/tituloGridCancion"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/imagenGridCancion"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/itim"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/cantanteGridCancion"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/tituloGridCancion"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/itim"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

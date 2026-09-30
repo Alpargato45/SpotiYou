@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.MusicaFragment.CancionesFragment"
+    android:background="@color/negroFondoApp">
+
+    <ImageView
+        android:id="@+id/imagenGrid"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/grid_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imagenList"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/list_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Top Canciones"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+    <include layout="@layout/add_layout_canciones_mas_escuchadas" android:layout_below="@id/imagenGrid"
+        android:id="@+id/listaFechas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

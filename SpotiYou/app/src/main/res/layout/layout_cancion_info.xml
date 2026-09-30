@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negroFondoApp">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layoutToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="@color/azulFondoLetras">
+
+                <ImageView
+                    android:id="@+id/volverAtras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_arrow_back_24"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgCancion"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/layoutToolbar"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textoNombreCancion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgCancion"
+                android:layout_marginTop="10dp"
+                android:textSize="35dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/itim"
+                android:text="Nombre de la Canción"/>
+
+            <TextView
+                android:id="@+id/textoArtistasCancion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textoNombreCancion"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/itim"
+                android:text="Artistas de la Canción"/>
+
+            <TextView
+                android:id="@+id/duracionCancion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textoArtistasCancion"
+                android:layout_marginTop="10dp"
+                android:text="Duración: "
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/itim"/>
+
+            <TextView
+                android:id="@+id/fechaSalidaCancion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/duracionCancion"
+                android:layout_marginTop="10dp"
+                android:text="Fecha de Salida: "
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/itim"/>
+
+            <TextView
+                android:id="@+id/popularidadCancion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Popularidad de la canción: "
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/fechaSalidaCancion"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/itim"/>
+
+            <!--TODO:Hacer Spinner con listas para añadir la cancion-->
+            <!--TODO:RadioButton añadir y quitar de favoritos-->
+
+            <Button
+                android:id="@+id/btnAñadirCola"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popularidadCancion"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:text="Añadir a la cola"/>
+
+            <ToggleButton
+                android:id="@+id/btnEscucharAhora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btnAñadirCola"
+                android:layout_below="@id/popularidadCancion"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_toggle_button"
+                android:textOff="Escuchar Ahora"
+                android:textOn="Pausar"/>
+
+            <Button
+                android:id="@+id/btnEscucharEnSpotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnAñadirCola"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#04E762"
+                android:drawableLeft="@drawable/spotify"
+                android:text="Spotify"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                tools:ignore="TextSizeCheck" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

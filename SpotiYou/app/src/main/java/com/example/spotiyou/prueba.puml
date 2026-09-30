@@ -1,0 +1,60 @@
+@startuml
+start
+
+:ConexionSpotifyApi.onCreate();
+:Initialize database (bbdd, db);
+:Receive Intent variable (tokenStatus, userId);
+
+if (tokenStatus == 0) then (true)
+    :Load authorization URL (webView.loadUrl);
+else (false)
+    :Renew token (renewToken);
+endif
+
+:WebViewClient.shouldOverrideUrlLoading();
+if (url.startsWith(REDIRECT_URI)) then (true)
+    :handleRedirectUrl();
+endif
+
+:Extract authorization code from URL;
+:Execute TokenExchangeTask;
+
+:TokenExchangeTask.doInBackground();
+:Make request to Spotify API;
+:Receive token response;
+if (tokenResponse != null) then (true)
+    :saveAccessTokenToDatabase(tokenResponse);
+    :Parse access token;
+    if (accessToken != null) then (true)
+        :Create Token object;
+        :Navigate to ActivityPrincipal;
+        :Update user status in database;
+        :finish();
+    endif
+else (false)
+    :Log token exchange error;
+endif
+
+:Execute TokenRefreshTask;
+
+:TokenRefreshTask.doInBackground();
+:Get refresh token from database;
+:Make request to Spotify API;
+:Receive token response;
+if (tokenResponse != null) then (true)
+    :saveAccessTokenToDatabase(tokenResponse);
+    :Parse access token;
+    if (accessToken != null) then (true)
+        :Create Token object;
+        :Navigate to ActivityPrincipal;
+        :finish();
+    endif
+else (false)
+    :Log token refresh error;
+endif
+
+:Parse token response for access and refresh tokens;
+:Save tokens to database;
+
+stop
+@enduml
