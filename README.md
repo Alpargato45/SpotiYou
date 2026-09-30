@@ -25,15 +25,18 @@ Logout functionality for the currently selected account.
 
 The home screen provides a quick overview of the user's Spotify activity:
 
+```
 Currently playing track.
 Current playback device.
 Recently played tracks.
 Spotify profile information.
 Premium account indicator.
 📊 Listening Statistics
+```
 
 Explore personal Spotify listening data across different time ranges:
 
+```
 Top artists — last 4 weeks.
 Top artists — last 6 months.
 Top artists — all time.
@@ -76,14 +79,16 @@ Picasso-based remote image loading.
 Custom application fonts and visual resources.
 📸 Screenshots
 
+```
+
 The screenshots below are intentionally focused on the features that best demonstrate the application from both a user and technical perspective.
 
-Screenshot 1 — Account Selection
+<h2>Screenshot 1 — Account Selection</h2>
 
 <img width="1080" height="2400" alt="Screenshot_2024-06-16-14-06-54-350_com example spotiyou" src="https://github.com/user-attachments/assets/bb0faae5-66e1-4ae1-9d01-57311fd9806b" />
 
 
-Screenshot 2 — Home Dashboard
+<h2>Screenshot 2 — Home Dashboard</h2>
 
 <img width="1220" height="2712" alt="Screenshot_2026-10-01-00-54-23-410_com example spotiyou" src="https://github.com/user-attachments/assets/473fc747-420b-4de8-90d2-7f95d3cae3c5" />
 
@@ -91,14 +96,14 @@ Screenshot 2 — Home Dashboard
 
 
 
-Screenshot 3 — Listening Statistics
+<h2>Screenshot 3 — Listening Statistics</h2>
 
 <img width="1220" height="2712" alt="Screenshot_2026-10-01-01-04-08-371_com example spotiyou" src="https://github.com/user-attachments/assets/dbc9bfb4-b85c-4ac4-82a7-2f0462a233ca" />
 
 
 
 
-Screenshot 4 — Music Search
+<h2>Screenshot 4 — Music Search</h2>
 
 <img width="1220" height="2712" alt="Screenshot_2026-10-01-01-04-29-472_com example spotiyou" src="https://github.com/user-attachments/assets/4cfbb965-8209-448f-b059-ae1d432883b0" />
 
@@ -106,7 +111,7 @@ Screenshot 4 — Music Search
 
 
 
-Screenshot 5 — Artist Details
+<h2>Screenshot 5 — Artist Details</h2>
 
 <img width="1220" height="2712" alt="Screenshot_2026-10-01-01-02-39-917_com example spotiyou" src="https://github.com/user-attachments/assets/b1140bca-eea6-4964-887a-2c92475a28cd" />
 <img width="1220" height="2712" alt="Screenshot_2026-10-01-01-02-35-329_com example spotiyou" src="https://github.com/user-attachments/assets/418c4062-2ee6-4a8d-a14c-886a3d4d3823" />
@@ -115,14 +120,14 @@ Screenshot 5 — Artist Details
 
 
 
-Screenshot 6 — Album Details
+<h2>Screenshot 6 — Album Details</h2>
 
 Show an album with its metadata and track listing.
 
 
 
 
-Screenshot 7 — Track Details
+<h2>Screenshot 7 — Track Details</h2>
 
 <img width="1220" height="2712" alt="Screenshot_2026-10-01-01-03-06-759_com example spotiyou" src="https://github.com/user-attachments/assets/8c475a23-4594-46fe-b66d-5c6a3af83826" />
 
@@ -158,6 +163,7 @@ SpotiYou follows a practical Android architecture built around Activities, Fragm
 
 The project separates Spotify operations by domain, including:
 
+```
 Albums
 Artists
 Tracks
@@ -165,6 +171,7 @@ Search
 Player
 Users
 Follow management
+```
 
 This keeps API-specific functionality separated from the main UI components and makes the codebase easier to navigate and extend.
 
@@ -230,6 +237,7 @@ app/src/main/java/com/example/spotiyou/esquemaConexionSpotify.png
 
 The application communicates with Spotify through dedicated Java classes responsible for individual API operations.
 
+```
 User Data
 Current user profile.
 Top artists.
@@ -250,6 +258,7 @@ Follow System
 Check whether an artist is followed.
 Follow an artist.
 Unfollow an artist.
+```
 
 The application therefore demonstrates integration with several independent areas of a real-world third-party REST API rather than relying on a single endpoint.
 
@@ -302,6 +311,8 @@ This allows SpotiYou to remember connected accounts between sessions and refresh
 
 The database is encapsulated in the BBDD class, while account information is represented through dedicated data-model classes and displayed through custom adapters.
 
+
+```
 📂 Project Structure
 app/src/main/java/com/example/spotiyou/
 │
@@ -327,6 +338,8 @@ app/src/main/java/com/example/spotiyou/
 ├── ActivityPrincipal.java
 ├── ConexionSpotifyApi.java
 └── PantallaCargaInicio.java
+
+```
 
 The project contains approximately 50 Java source files, covering UI, API integration, authentication, persistence, adapters and data models.
 
