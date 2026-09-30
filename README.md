@@ -80,35 +80,37 @@ The screenshots below are intentionally focused on the features that best demons
 
 Screenshot 1 — Account Selection
 
-Show the initial account-selection screen with the available Spotify accounts.
-
 <img width="1080" height="2400" alt="Screenshot_2024-06-16-14-06-54-350_com example spotiyou" src="https://github.com/user-attachments/assets/bb0faae5-66e1-4ae1-9d01-57311fd9806b" />
 
 
 Screenshot 2 — Home Dashboard
 
-Show the main dashboard with the current track, playback device, profile information and recently played tracks.
+<img width="1220" height="2712" alt="Screenshot_2026-10-01-00-54-23-410_com example spotiyou" src="https://github.com/user-attachments/assets/473fc747-420b-4de8-90d2-7f95d3cae3c5" />
+
 
 
 
 
 Screenshot 3 — Listening Statistics
 
-Show the music statistics screen with top tracks/artists and one of the available time ranges.
+<img width="1220" height="2712" alt="Screenshot_2026-10-01-01-04-08-371_com example spotiyou" src="https://github.com/user-attachments/assets/dbc9bfb4-b85c-4ac4-82a7-2f0462a233ca" />
 
 
 
 
 Screenshot 4 — Music Search
 
-Search for a recognizable artist or song and show several returned tracks.
+<img width="1220" height="2712" alt="Screenshot_2026-10-01-01-04-29-472_com example spotiyou" src="https://github.com/user-attachments/assets/4cfbb965-8209-448f-b059-ae1d432883b0" />
+
 
 
 
 
 Screenshot 5 — Artist Details
 
-Show an artist profile including the image, information, top tracks and available actions.
+<img width="1220" height="2712" alt="Screenshot_2026-10-01-01-02-39-917_com example spotiyou" src="https://github.com/user-attachments/assets/b1140bca-eea6-4964-887a-2c92475a28cd" />
+<img width="1220" height="2712" alt="Screenshot_2026-10-01-01-02-35-329_com example spotiyou" src="https://github.com/user-attachments/assets/418c4062-2ee6-4a8d-a14c-886a3d4d3823" />
+
 
 
 
@@ -122,19 +124,12 @@ Show an album with its metadata and track listing.
 
 Screenshot 7 — Track Details
 
-Show the track detail screen with metadata and the available actions such as previewing, opening Spotify and adding the track to the queue.
+<img width="1220" height="2712" alt="Screenshot_2026-10-01-01-03-06-759_com example spotiyou" src="https://github.com/user-attachments/assets/8c475a23-4594-46fe-b66d-5c6a3af83826" />
 
 
 
 
-Screenshot 8 — Authentication Flow
-
-Add the authentication/connection diagram included in the project, or recreate it as a cleaner architecture diagram for the repository.
-
-
-
-
-🛠️ Tech Stack
+```🛠️ Tech Stack
 Technology	Purpose
 Java	Main application language
 Android SDK	Mobile application platform
@@ -156,6 +151,7 @@ Minimum SDK: 24
 Android Gradle Plugin: 8.1.1
 Gradle: 8.9
 Java source compatibility: Java 8
+```
 🏗️ Architecture
 
 SpotiYou follows a practical Android architecture built around Activities, Fragments, dedicated Spotify API classes, custom adapters and a local SQLite database.
