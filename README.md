@@ -1,3 +1,4 @@
+
 # SpotiYou
 
 An Android application that connects to the Spotify Web API to turn Spotify listening data into a personalized mobile experience.
@@ -81,7 +82,7 @@ Screenshot 1 — Account Selection
 
 Show the initial account-selection screen with the available Spotify accounts.
 
-
+<img width="1080" height="2400" alt="Screenshot_2024-06-16-14-06-54-350_com example spotiyou" src="https://github.com/user-attachments/assets/bb0faae5-66e1-4ae1-9d01-57311fd9806b" />
 
 
 Screenshot 2 — Home Dashboard
