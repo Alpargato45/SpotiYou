@@ -182,7 +182,9 @@ flowchart TD
 
     JSON --> UI
     DB --> UI
+```text
 Application Flow
+
 Application Startup
         │
         ▼
@@ -222,6 +224,7 @@ Account Selection
                 ▼
         Detail Screens
      Artist / Album / Track
+```
 
 The original authentication flow diagram is also included in the project:
 
