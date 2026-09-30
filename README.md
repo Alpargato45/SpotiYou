@@ -15,12 +15,12 @@ OAuth 2.0 authorization flow with Spotify.
 Custom deep-link callback using spotiyou://callback.
 Access token and refresh token handling.
 Automatic token refresh for previously connected accounts.
-Local account selection when the application starts.
+Local account selection when the application starts.<br>
 👤 Account Management<br>
 Multiple Spotify accounts can be stored locally.
 Account selection screen at application startup.
 Spotify profile information and profile images.
-Logout functionality for the currently selected account.
+Logout functionality for the currently selected account.<br>
 🏠 Home Dashboard<br>
 
 The home screen provides a quick overview of the user's Spotify activity:
@@ -262,7 +262,7 @@ Unfollow an artist.
 
 The application therefore demonstrates integration with several independent areas of a real-world third-party REST API rather than relying on a single endpoint.
 
- Authentication Flow<br>
+<br> Authentication Flow<br>
 
 SpotiYou implements a Spotify authorization-code flow using a custom application URI scheme.
 
@@ -353,8 +353,8 @@ app/src/main/java/com/example/spotiyou/
 
 The project contains approximately 50 Java source files, covering UI, API integration, authentication, persistence, adapters and data models.
 
-⚙️ Getting Started<br>
-Requirements<br>
+<br>⚙️ Getting Started<br>
+<br>Requirements<br>
 ```
 Android Studio.
 Android SDK 34.
